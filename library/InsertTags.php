@@ -18,11 +18,11 @@ namespace MCupic\BeAvatar;
 class InsertTags extends \KirstenRoschanski\Avatar\InsertTags
 {
        /**
-        * InsertTag
+        * replaceTagsBeUser (InsertTag)
         * @param $strTag
         * @return bool|string
         */
-       public function replaceTags($strTag)
+       public function replaceTagsBeUser($strTag)
 	{
 		list($strTag, $strParams) = trimsplit('?', $strTag);
 		$arrTag = trimsplit('::', $strTag);
